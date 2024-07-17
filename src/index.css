@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.products{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.products article{
+  display: flex;
+  margin: 0.5rem;
+  background-color: rgb(126, 152, 113);
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.8s;
+}
+.products article:hover{
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: rgb(150, 182, 100);
+}
+.products article .btn{
+  margin: auto auto 0 auto;
+}
+.products article .btn button{
+  margin: auto auto 0 auto;
+  font-size: 1rem;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  transition: 0.8s;
+}
+.products article .btn button:hover{
+  background: greenyellow;
+  cursor: pointer;
+  color: green;
+}
